@@ -1,0 +1,64 @@
+:root {
+    --white-color: #fff;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+}
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+/* header */
+.header {
+    background-image: linear-gradient(
+        to right,
+        rgba(43, 74, 97, 0.87),
+        rgba(43, 74, 97, 0.87)
+    ),
+    url(/pictures/header-background.jpg);
+    border-bottom: 3px solid #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 186px;
+    height: 72px;
+    margin-right: 184px;
+    padding: 39px 0;
+}
+
+.header-list {
+    display: flex;
+    gap: 38px;
+}
+
+.header-link {
+    color: var(--white-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: #94CFFF;
+}
+
+.header-login {
+    margin-left: 228px;
+    color: #26C6EA;
+    font-family: HeadlandOne;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 141px;
+    height: 41.694px;
+    border-radius: 35px 0px;
+    border: 2px solid #26C7EA;
+    background-color: #0B0E66;
+}
