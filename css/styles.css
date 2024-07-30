@@ -17,7 +17,7 @@ body {
     background-image: linear-gradient(to right,
             rgba(43, 74, 97, 0.87),
             rgba(43, 74, 97, 0.87)),
-        url(/pictures/background.jpg);
+        url(../pictures/background.jpg);
     border-bottom: 3px solid #FFF;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,7 +67,7 @@ body {
 /* main */
 /* hero */
 .hero {
-    background-image: url(/pictures/hero-background.webp);
+    background-image: url(../pictures/hero-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0B0E66;
