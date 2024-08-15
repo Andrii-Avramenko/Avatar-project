@@ -152,7 +152,7 @@ body {
 .trailer {
     background-image: url(../pictures/trailer-background.jpg);
     background-repeat: no-repeat;
-    padding: 330px 590px;
+    padding: 330px 0;
 }
 
 /* footer */
