@@ -10,6 +10,17 @@ body {
     margin: 0;
 }
 
+.button {
+    color: #26C7EA;
+    font-family: HeadlandOne;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+    border-radius: 45px 0px;
+    border: 3px solid #26C7EA;
+    background: #0B0E66;
+}
+
 .container {
     width: 1100px;
     margin: 0 auto;
@@ -70,10 +81,13 @@ body {
 /* main */
 /* hero */
 .hero {
+
+    height: 740px;
     background-image: url(../pictures/hero-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0B0E66;
+
 }
 
 .hero-textbox {
@@ -98,23 +112,22 @@ body {
     width: 260px;
     height: 80px;
     margin-top: 42px;
-    color: #26C7EA;
-    font-family: HeadlandOne;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.25;
-    border-radius: 45px 0px;
-    border: 3px solid #26C7EA;
-    background: #0B0E66;
 }
 
 /* quote */
-.first-quote {
+.quote {
     padding-top: 75px;
     /* тимчасовий паддінг */
     padding-bottom: 138px;
 }
-.quote {
+
+.quote-name::after {
+    content: "";
+    background-image: url(../pictures/quote-pic.webp);
+    background-position-x: center;
+}
+
+.quote-text {
     color: var(--dark-blue-text);
     text-align: center;
     font-family: Inter;
@@ -135,4 +148,33 @@ body {
     line-height: normal;
 }
 
+/* trailer */
+.trailer {
+    background-image: url(../pictures/trailer-background.jpg);
+    background-repeat: no-repeat;
+    padding: 330px 590px;
+}
+
 /* footer */
+.footer {
+    background-image: linear-gradient(to right,
+            rgba(43, 74, 97, 0.87),
+            rgba(43, 74, 97, 0.87)),
+        url(../pictures/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.footer-logo {
+    width: 186px;
+    height: 72px;
+    margin-right: 184px;
+    padding: 77px 0;
+}
+/* .footer-line {
+    width: 2px;
+    height: 153px;
+    background-color: white;
+    
+} */
