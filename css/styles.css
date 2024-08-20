@@ -7,7 +7,6 @@
 
 body {
     font-family: Inter, sans-serif;
-    margin: 0;
 }
 
 .button {
@@ -93,11 +92,17 @@ body {
 .hero-textbox {
     display: flex;
     flex-direction: column;
-    /* тимчасовий проміжок */
-    gap: 40px;
     padding: 180px 0;
 }
-
+.hero-top::after {
+    content: "";
+    display: block;
+    background-image: url(../pictures/arrow.webp);
+    background-position-x: center;
+    width: 400px;
+    height: 120px;
+    margin: 0 auto;
+}
 .hero-text {
     flex-wrap: wrap;
     width: 298px;
