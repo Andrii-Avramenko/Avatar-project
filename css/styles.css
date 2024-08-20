@@ -117,14 +117,17 @@ body {
 /* quote */
 .quote {
     padding-top: 75px;
-    /* тимчасовий паддінг */
-    padding-bottom: 138px;
+    padding-bottom: 10px;
 }
 
 .quote-name::after {
     content: "";
+    display: block;
     background-image: url(../pictures/quote-pic.webp);
     background-position-x: center;
+    width: 400px;
+    height: 120px;
+    margin: 0 auto;
 }
 
 .quote-text {
@@ -150,9 +153,18 @@ body {
 
 /* trailer */
 .trailer {
+    /* height: 741px; */
+    padding: 330px 0;
     background-image: url(../pictures/trailer-background.jpg);
     background-repeat: no-repeat;
-    padding: 330px 0;
+    
+    background-size: cover;
+    
+}
+.trailer-button {
+    display: block;
+    margin: auto;
+    padding: 25px 18px;
 }
 
 /* footer */
