@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = '../index.html';
         } else {
             // Якщо користувач знаходиться на англомовній сторонці його перекидує на україномовну сторінку
-            window.location.href = '../ua.html';
+            window.location.href = '../ua/ua.html';
         }
     });
 });
