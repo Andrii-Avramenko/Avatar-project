@@ -49,7 +49,15 @@ body {
     background-size: cover;
     background-position-y: center;
 }
-
+.change-lang {
+    display: flex;
+}
+.cl-btn {
+    width: 36px;
+    height: 20px;
+    border: 1px var(--white-color);
+    border-radius: 10px;
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -97,13 +105,11 @@ body {
 /* main */
 /* hero */
 .hero {
-
     height: 740px;
     background-image: url(../pictures/hero-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0B0E66;
-
 }
 
 .hero-textbox {
@@ -237,6 +243,7 @@ body {
     display: block;
     background-image: url(../pictures/quote-pic.webp);
     background-position: center;
+    background-size: cover;
     width: 152px;
     height: 40px;
 }
@@ -265,40 +272,49 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ffffff40;
-    margin-bottom: 15px;
+    padding-top: 77px;
+    padding-bottom: 25px;
 }
 
 .footer-logo {
     width: 186px;
     height: 72px;
-    margin-right: 184px;
-    padding: 77px 0;
 }
-/* .footer-line {
-    width: 2px;
-    height: 153px;
-    background-color: white;
-    
-*/
-.footer-info {
+.footer-wrap {
     display: flex;
-    flex-direction: column;
-    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 37px;
 }
-
-.footer-info p {
-    margin: 5px 0;
+.footer-info {  
+    width: 665px;
+}
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--white-color);
-    font-family: Inter;
+}
+.footer-item:nth-child(1) {
+    margin-bottom: 16px;
+}
+.footer-item p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.2;
 }
-
+.footer-label {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    white-space: nowrap;
+}
+.footer-label::after {
+    content: "";
+    margin-left: 20px;
+    height: 5px;
+    width: 100%;
+    border-bottom: 1px dashed var(--white-color);
+}
 .footer-copyright {
     color: var(--white-color);
     text-align: center;
