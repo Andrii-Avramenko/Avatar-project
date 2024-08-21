@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
@@ -7,130 +7,140 @@
     <title>Avatar Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Headland+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!-- body -->
 
 <body>
     <!-- header -->
-    <h1 class="visually-hidden">
-        <h1>
-            <header class="header">
-                <div class="container header-container">
-                    <a href="./index.html"><img src="./pictures/avatar-logo.webp" alt="Avatar Logo"
-                            class="header-logo"></a>
-                    <nav class="header-nav">
-                        <ul class="header-list">
-                            <li class="header-item"><a href="./index.html#" class="header-link">Головна</a></li>
-                            <li class="header-item"><a href="#" class="header-link">Про нас</a></li>
-                            <li class="header-item"><a href="#" class="header-link">Контакти</a></li>
-                        </ul>
-                    </nav>
-                    <!-- Log in кнопка -->
-                    <button type="button" class="header-login button">Увійти</button>
-                </div>
-            </header>
-            <!-- main -->
-            <main>
-                <!-- Секція герой -->
-                <section class="hero">
-                    <div class="container">
+    <header class="header">
+        <div class="container header-container">
+            <a href="./index.html"><img src="./pictures/avatar-logo.webp" alt="Avatar Logo" class="header-logo"></a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="./index.html#" class="header-link">Main</a></li>
+                    <li class="header-item"><a href="#" class="header-link">About Us</a></li>
+                    <li class="header-item"><a href="#" class="header-link">Contacts</a></li>
+                </ul>
+            </nav>
+            <!-- Log in кнопка -->
+            <button type="button" class="header-login button">Log In</button>
+        </div>
+        <div class="language-switcher">
+            <span class="lang eng" data-lang="en">ENG</span>
+            <div class="toggle">
+                <div class="circle"></div>
+            </div>
+            <span class="lang ua" data-lang="ua">UA</span>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- Секція герой -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="visually-hidden">Website for an Avatar fans<h1>
                         <div class="hero-textbox">
-                            <p class="hero-text hero-top">Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx
+                            <p class="hero-text-navi">Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx
                                 'ì'awn slu Na'viyä
                                 hapxì.
                                 Säwem nìayoeng!</p>
-                            <p class="hero-text">Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
-                                залишається, щоб стати частиною Народу. Борись разом з нами!</p>
-                            <button type="button" class="hero-button button">Приєднатися до клану</button>
+                            <p class="hero-text">I'm speaking with the warrior! Your spirit goes with Eywa, your body
+                                stays
+                                behind
+                                to become part of the People. Fight with us!</p>
+                            <button type="button" class="hero-button button">Join clan</button>
                         </div>
                         <!-- <address class="hero-links">
                     <a href="https://youtube.com"></a>
                     <a href="https://instagram."></a>
                     <a href=""></a>
                 </address> -->
-                    </div>
-                </section>
-                <!-- firts quote -->
-                <section class="quote">
-                    <div class="container">
-                        <p class="quote-text">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”</p>
-                        <p class="quote-name">Джейк Саллі</p>
-                    </div>
-                </section>
-                <!-- trailer -->
-                <section class="trailer">
-                    <div class="container">
-                        <button type="button" class="trailer-button button">Дивитися Трейлер</button>
-                    </div>
-                </section>
-                <!-- second quote -->
-                <section class="quote">
-                    <div class="container">
-                        <p class="quote-text">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</p>
-                        <p class="quote-name">Джейк Саллі</p>
-                    </div>
-                </section>
-                <!-- learn Na'vi language -->
-                <section class="learn-lang">
-                    <div class="container">
-                        <h2 class="lang-header">Вчимо мову На’ві</h2>
-                        <ul class="lang-cards">
-                            <li class="lang-card">
-                                <p>Привіт</p>
-                                <p>Kaltxì</p>
-                            </li>
-                            <li class="lang-card">
-                                <p>Як справи?</p>
-                                <p>Ngaru lu fpom srak?</p>
-                            </li>
-                            <li class="lang-card">
-                                <p>Все добре</p>
-                                <p>Lu fpom</p>
-                            </li>
-                            <li class="lang-card">
-                                <p>Дякую</p>
-                                <p>Irayo si</p>
-                            </li>
-                            <li class="lang-card">
-                                <p>Я бачу тебе</p>
-                                <p>Oel ngati kameie</p>
-                            </li>
-                            <li class="lang-card">
-                                <p>Слідуй за мною!</p>
-                                <p>Nong oet!</p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- third quote -->
-                <section class="quote">
-                    <div class="container">
-                        <p class="quote-text">"НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ, ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС."</p>
-                        <p class="quote-name">Нейтірі</p>
-                    </div>
-                </section>
-            </main>
-            <!-- footer -->
-            <footer class="footer">
-                <div class="container">
-                    <img src="./pictures/avatar-logo.webp" alt="Avatar Logo" class="footer-logo">
-                    <!-- <hr class="footer-line"> -->
-                    <address class="footer-address">
-                        <p>Q&A E-mail</p>
-                        <p>avatarwowqa@gmail.com</p>
-                        <p>Cooperation E-mail</p>
-                        <p>avatarwowcoop@gmail.com</p>
-                    </address>
-                </div>
-            </footer>
+            </div>
+        </section>
+        <!-- firts quote -->
+        <section class="quote">
+            <div class="container">
+                <p class="quote-text">"A lot of people from the sky are gonna come. they're Gonna come like a
+                    rain that
+                    never ends."</p>
+                <p class="quote-name">Jake Sully</p>
+            </div>
+        </section>
+        <!-- trailer -->
+        <section class="trailer">
+            <div class="container">
+                <button type="button" class="trailer-button button">Watch Trailer</button>
+            </div>
+        </section>
+        <!-- second quote -->
+        <section class="quote">
+            <div class="container">
+                <p class="quote-text">"All energy is only borrowed, and one day you have to give it back."</p>
+                <p class="quote-name">Jake Sully</p>
+            </div>
+        </section>
+        <!-- learn Na'vi language -->
+        <section class="language">
+            <div class="container">
+                <h2 class="lang-title">Let's learn the Na'vi language</h2>
+                <ul class="lang-cards">
+                    <li class="lang-card">
+                        <!-- .language-h визначає language human (Мова Людей) -->
+                        <p class="language-h arrow-left">Hello</p>
+                        <p class="language-navi">Kaltxì</p>
+                    </li>
+                    <li class="lang-card">
+                        <p class="language-h center">How Are You?</p>
+                        <p class="language-navi">Ngaru lu fpom srak?</p>
+                    </li>
+                    <li class="lang-card">
+                        <p class="language-h arrow-right">I'm Well</p>
+                        <p class="language-navi">Lu fpom</p>
+                    </li>
+                    <li class="lang-card">
+                        <p class="language-he arrow-left">Thank you</p>
+                        <p class="language-navi">Irayo si</p>
+                    </li>
+                    <li class="lang-card">
+                        <p class="language-h center">I See You</p>
+                        <p class="language-navi">Oel ngati kameie</p>
+                    </li>
+                    <li class="lang-card">
+                        <p class="language-h arrow-right">Follow me!</p>
+                        <p class="language-navi">Nong oet!</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- third quote -->
+        <section class="quote">
+            <div class="container">
+                <p class="quote-text">"Our great mother does not take sides, she protects only the balance of
+                    life."</p>
+                <p class="quote-name">NEYTIRI</p>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap"> 
+                <a href="./index.html"><img src="./pictures/avatar-logo.webp" alt="Avatar Logo" class="footer-logo"></a>
+                <ul class="footer-info">
+                    <li class="footer-item"><span class="footer-label">Q&A E-mail</span><span class="email">avatartwowqa@gmail.com</span></li>
+                    <li class="footer-item"><span class="footer-label">Cooperation E-mail</span><span class="email">avatartwowcoop@gmail.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; 2023 Avatar: The Way Of Water. All rights reserved</p>
+    </footer>
+    <script src="./js/lang-switcher.js"></script>
 </body>
 
 </html>

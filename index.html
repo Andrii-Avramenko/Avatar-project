@@ -31,15 +31,13 @@
             <!-- Log in кнопка -->
             <button type="button" class="header-login button">Log In</button>
         </div>
-        <div class="change-lang">
-            <span class="cl-text">Eng</span>
-            <button type="button" class="cl-btn"><a href="./ua.html"></a></button>
-            <span class="cl-text">Ua</span>
+        <div class="language-switcher">
+            <span class="lang eng" data-lang="en">ENG</span>
+            <div class="toggle">
+                <div class="circle"></div>
+            </div>
+            <span class="lang ua" data-lang="ua">UA</span>
         </div>
-        <svg width="36" height="20" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.5" width="35" height="19" rx="9.5" stroke="white"/>
-            <circle cx="10" cy="10" r="6" fill="white"/>
-          </svg>
     </header>
     <!-- main -->
     <main>
@@ -142,6 +140,7 @@
         </div>
         <p class="footer-copyright">&copy; 2023 Avatar: The Way Of Water. All rights reserved</p>
     </footer>
+    <script src="./js/lang-switcher.js"></script>
 </body>
 
 </html>

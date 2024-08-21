@@ -38,6 +38,56 @@ body {
     margin: 0 auto;
 }
 
+/* language changer */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.lang {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.toggle {
+    width: 50px;
+    height: 24px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle.active .circle {
+    transform: translateX(26px);
+}
+
+.lang.active {
+    color: var(--white-color);
+}
+
+.lang.inactive {
+    color: #ccc;
+}
+
 /* header */
 .header {
     background-image: linear-gradient(to right,
@@ -49,15 +99,7 @@ body {
     background-size: cover;
     background-position-y: center;
 }
-.change-lang {
-    display: flex;
-}
-.cl-btn {
-    width: 36px;
-    height: 20px;
-    border: 1px var(--white-color);
-    border-radius: 10px;
-}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -230,6 +272,7 @@ body {
     padding: 36px 0;
     text-align: center;
 }
+
 .arrow-left::after {
     content: "";
     display: block;
@@ -238,6 +281,7 @@ body {
     width: 152px;
     height: 40px;
 }
+
 .center::after {
     content: "";
     display: block;
@@ -247,6 +291,7 @@ body {
     width: 152px;
     height: 40px;
 }
+
 .arrow-right::after {
     content: "";
     display: block;
@@ -255,6 +300,7 @@ body {
     width: 152px;
     height: 40px;
 }
+
 .lang-header {
     color: var(--light-black-text);
     font-family: HeadlandOne;
@@ -280,34 +326,41 @@ body {
     width: 186px;
     height: 72px;
 }
+
 .footer-wrap {
     display: flex;
     justify-content: space-between;
     margin-bottom: 37px;
 }
-.footer-info {  
+
+.footer-info {
     width: 665px;
 }
+
 .footer-item {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--white-color);
 }
+
 .footer-item:nth-child(1) {
     margin-bottom: 16px;
 }
+
 .footer-item p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.2;
 }
+
 .footer-label {
     display: flex;
     align-items: center;
     flex-grow: 1;
     white-space: nowrap;
 }
+
 .footer-label::after {
     content: "";
     margin-left: 20px;
@@ -315,6 +368,7 @@ body {
     width: 100%;
     border-bottom: 1px dashed var(--white-color);
 }
+
 .footer-copyright {
     color: var(--white-color);
     text-align: center;
