@@ -2,7 +2,20 @@
     --white-color: #fff;
     --black-color: #000;
     --dark-blue-text: #0A3853;
-    --light-black-text: #141414
+    --light-black-text: #141414;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 body {
@@ -50,12 +63,16 @@ body {
 }
 
 .header-list {
+    font-weight: 400;
     display: flex;
     gap: 38px;
 }
 
 .header-link {
     color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
 }
 
 .header-link:focus,
@@ -94,16 +111,19 @@ body {
     flex-direction: column;
     padding: 180px 0;
 }
-.hero-top::after {
+
+.hero-text-navi::after {
     content: "";
     display: block;
     background-image: url(../pictures/arrow.webp);
     background-position-x: center;
-    width: 400px;
-    height: 120px;
+    width: 152px;
+    height: 40px;
     margin: 0 auto;
 }
-.hero-text {
+
+.hero-text,
+.hero-text-navi {
     flex-wrap: wrap;
     width: 298px;
     color: var(--white-color);
@@ -162,14 +182,78 @@ body {
     padding: 330px 0;
     background-image: url(../pictures/trailer-background.jpg);
     background-repeat: no-repeat;
-    
+
     background-size: cover;
-    
+
 }
+
 .trailer-button {
     display: block;
     margin: auto;
     padding: 25px 18px;
+}
+
+/* lang */
+.language {
+    background-image: url(../pictures/lang-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 58px 0;
+}
+
+.lang-title {
+    color: var(--light-black-text);
+    font-family: HeadlandOne;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.lang-cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 37px;
+}
+
+.lang-card {
+    flex-basis: calc((100% - 74px) / 3);
+    background-color: rgba(255, 255, 255, 0.70);
+    padding: 36px 0;
+    text-align: center;
+}
+.arrow-left::after {
+    content: "";
+    display: block;
+    background-image: url(../pictures/arrow-left.webp);
+    background-position: center;
+    width: 152px;
+    height: 40px;
+}
+.center::after {
+    content: "";
+    display: block;
+    background-image: url(../pictures/quote-pic.webp);
+    background-position: center;
+    width: 152px;
+    height: 40px;
+}
+.arrow-right::after {
+    content: "";
+    display: block;
+    background-image: url(../pictures/arrow-right.webp);
+    background-position: center;
+    width: 152px;
+    height: 40px;
+}
+.lang-header {
+    color: var(--light-black-text);
+    font-family: HeadlandOne;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
 /* footer */
@@ -181,6 +265,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff40;
+    margin-bottom: 15px;
 }
 
 .footer-logo {
@@ -194,4 +283,27 @@ body {
     height: 153px;
     background-color: white;
     
-} */
+*/
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    color: var(--white-color);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.footer-copyright {
+    color: var(--white-color);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
