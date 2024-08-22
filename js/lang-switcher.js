@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const currentLang = document.documentElement.lang;
 
+    // color lang status 
     if (currentLang === "ua") {
         toggle.classList.add('active');
         eng.classList.add('inactive');
