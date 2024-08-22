@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener('click', () => {
         if (currentLang === "ua") {
             // Якщо користувач знаходиться на україномовній сторонці його перекидує на англомовну сторінку
-            window.location.href = '../index.html';
+            window.location.href = 'index.html';
         } else {
             // Якщо користувач знаходиться на англомовній сторонці його перекидує на україномовну сторінку
-            window.location.href = '../ua/ua.html';
+            window.location.href = 'ua.html';
         }
     });
 });
